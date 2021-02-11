@@ -1,0 +1,452 @@
+/* Index - Page */
+/* Navbar */
+.navbar ul li{
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+/* Banners - Section */
+#led-mask .section-title,
+#gallery .section-title{
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#led-mask p,
+#gallery p{
+  margin-left: 3rem;
+  font-size: 1rem;
+}
+
+#led-mask h3{
+  margin-left: 3rem;
+}
+
+#led-mask .btn,
+#gallery .btn{
+  margin-left: 3rem;
+}
+
+#discount .section-title{
+  margin-right: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#discount p{
+  margin-right: 3rem;
+  font-size: 1rem;
+}
+
+#discount .btn{
+  margin-right: 3rem;
+}
+
+#discount .img-content h1 .txt-3{
+  font-size: 2rem;
+}
+
+/* Services - Section */
+#services .grid-container{
+  grid-template-columns: auto;
+}
+
+.grid-container .box-3{
+  margin-bottom: 0;
+}
+
+.grid-container .box{
+  margin: 0.75rem 0;
+}
+
+.grid-container .box-4{
+  margin-bottom: 6.3rem;
+}
+
+/* Logo - Section */
+#logos .logos-home{
+  width: 95%;
+}
+
+#logos .logos-home img{
+  width: 150px;
+  height: 100px;
+}
+
+/* Gallery Page */
+#gallery-grid .grid-container{
+  grid-template-columns: auto auto auto auto;
+}
+
+/* Led - Mask Page */
+#slider{
+  flex-direction: column;
+}
+
+/* Page - Animation */
+#header-home .bottom-line-1{
+  transform: translateX(0);
+}
+
+#header-home .bottom-line-2{
+  transform: translateX(0);
+}
+
+#header-home .txt-4{
+  opacity: 1;
+}
+
+#header-home .btn{
+  transform: translateY(0);
+}
+
+/* Width 768 */
+@media(max-width: 768px){
+  /* Gallery Page */
+  #gallery-grid .grid-container{
+    grid-template-columns: auto auto auto;
+  }
+
+  /* Led Mask Page */
+  .slider-content{
+    margin-left: 2rem;
+  }
+}
+
+/* Width 600 */
+@media(max-width: 600px){
+  body{
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  /* Index - Page */
+  /* Navbar */
+  .navbar ul{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar ul li{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 15px 5px;
+  }
+
+  /* Header */
+  .header-home .img .logo .bottom-line{
+    width: 15rem;
+  }
+
+  /* About Section */
+  #about .container .icons{
+    grid-gap: 2.5rem;
+  }
+
+  #about .container .icons .icon-1::before,
+  #about .container .icons .icon-2::before,
+  #about .container .icons .icon-3::before{
+    content: '';
+    display: none;
+  }
+
+  #about .container .icons .icon-2::before{
+    content: '';
+    left: -10px;
+  }
+
+  /* Led - Mask Section */
+  #led-mask{
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
+  #led-mask .imgbox{
+    height: 120%;
+  }
+
+  #led-mask .img-content .section-title{
+    margin: 2rem 0 1rem 1rem;
+  }
+
+  #led-mask .img-content p{
+    margin: 0 0 2.5rem 1rem;
+  }
+
+  #led-mask .img-content h3{
+    margin:0 0 1.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  #led-mask .img-content .btn{
+    margin: 0 0 8rem 1rem;
+    letter-spacing: 1px;
+  }
+
+  /* Discount Section */
+  #discount{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+  
+  #discount .imgbox{
+    height: 50vh;
+  }
+
+  #discount .img-content{
+    height: 50vh;
+  }
+
+  #discount .img-content .section-title{
+    margin: 0.5rem 0 2rem 1rem;
+  }
+
+  #discount .img-content p{
+    margin: 0 0 2.5rem 1rem;
+  }
+
+  #discount .img-content .btn{
+    margin: 0 0 2rem 1rem;
+  }
+
+  /* Gallery Section */
+  #gallery{
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
+  #gallery .img-content{
+    height: 50vh;
+  }
+
+  #gallery .imgbox{
+    height: 50vh;
+  }
+
+  #gallery .img-content .section-title{
+    margin: 0.5rem 0 2rem 1rem;
+  }
+
+  #gallery .img-content p{
+    margin: 0 0 2.5rem 1rem;
+  }
+
+  #gallery .img-content h3{
+    margin:0 0 2rem 1rem;
+  }
+
+  #gallery .img-content .btn{
+    margin: 0 0 2rem 1rem;
+  }
+
+  /* Services Section */
+  .grid-container .box{
+    padding: 2rem;
+  }
+
+  /* Logos Section */
+  #logos .logos-home{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #logos .logos-home{
+    width: 100%;
+  }
+
+  #logos .logos-home img{
+    padding: 1.3rem;
+  }
+
+  /* Contact Section */
+  #contact .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact .container .content{
+    text-align: center;
+  }
+
+  #contact .container .content h1{
+    margin: 1rem 0;
+  }
+
+  #contact .container .content p{
+    margin-bottom: 0;
+  }
+
+  #contact .container .form .text-input{
+    margin-top: 3rem;
+  }
+
+  #contact .container .form .btn{
+    margin-top: 1rem;
+  }
+
+  /* Main Footer */
+  #main-footer .icons .icon{
+    margin: 0 1.3rem;
+  }
+
+  /* Gallery Page */
+  #gallery-grid .grid-container{
+    grid-template-columns: auto;
+  }
+
+  /* Led-Mask Page */
+  .slidershow{
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-content{
+    margin: auto;
+  }
+}
+
+/* Width 320 (iphone 5/ SE) */
+@media(max-width: 320px){
+  /* Header-Home */
+  .header-home .img .btn{
+    display: none;
+  }
+
+  /* Led - Mask Section */
+  #led-mask .imgbox{
+    height: 50vh;
+  }
+
+  #led-mask .img-content{
+    height: 50vh;
+  }
+
+  #led-mask .img-content .btn{
+    margin: 0 0 1rem 1rem;
+    letter-spacing: 1px;
+  }
+
+  /* Discount Section */
+  #discount .img-content .section-title{
+    margin: 0.5rem 0 1rem 1rem;
+  }
+
+  /* Logos */
+  #logos .logos-home img{
+    width: 120px;
+    height: 80px;
+  }
+}
+
+/* Landscape 500px */
+@media (max-height: 500px){
+  .header-home .img .btn{
+    display: none;
+  }
+
+  .header-home .logo .bottom-line{
+    display: none;
+  }
+
+  /* Led - Mask Section */
+  #led-mask{
+    height: 100vh;
+  }
+
+  #led-mask .imgbox{
+    height: 100%;
+  }
+
+  #led-mask .img-content .section-title{
+    margin: 0.5rem 0 1.5rem 1rem;
+  }
+
+  #led-mask .img-content p{
+    margin: 0 0 2rem 1rem;
+  }
+
+  #led-mask .img-content h3{
+    margin:0 0 1.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  #led-mask .img-content .btn{
+    margin: 0 0 6rem 1rem;
+    letter-spacing: 1px;
+  }
+
+  /* Discount - Section */
+  #discount{
+    height: 100vh;
+    align-items: flex-start;
+  }
+  
+  #discount .imgbox{
+    height: 100%;
+  }
+
+  #discount .img-content .section-title{
+    margin: 0.5rem 0 1rem 1rem;
+  }
+
+  #discount .img-content p{
+    margin: 0 0 0rem 1rem;
+  }
+
+  #discount .img-content .btn{
+    margin: 2rem 0 3.5rem 1rem;
+  }
+
+  /* Gallery */
+  #gallery{
+    height: 100vh;
+  }
+  
+  #gallery .imgbox{
+    height: 100%;
+  }
+
+  #gallery .img-content .section-title{
+    margin: 0.5rem 0 1rem 1rem;
+  }
+
+  #gallery .img-content p{
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+/* Landscape 320 */
+@media (max-height: 320px){
+  #about .container .icons .icon-1::before,
+  #about .container .icons .icon-2::before,
+  #about .container .icons .icon-3::before{
+    border: none;
+  }
+
+  #led-mask{
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+
+  #gallery{
+    grid-template-columns: repeat(2, 1fr);
+    height: 50%;
+  }
+
+  #gallery .img-content{
+    height: 100%;
+  }
+
+  #discount{
+    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
+    width: 100%;
+    flex: none;
+  }
+
+  #discount .img-content{
+    width: 100%;
+  }
+}
