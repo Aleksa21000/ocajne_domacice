@@ -195,11 +195,11 @@ a{
 #led-mask{
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  height: 55vh;
+  height: 700px;
 }
 
 #led-mask .imgbox{
-  height: 55vh;
+  height: 100%;
 }
 
 #led-mask .imgbox img{
@@ -214,7 +214,7 @@ a{
   display: flex;
   flex-direction: column;
   text-align: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #led-mask .img-content h3 i{
@@ -225,11 +225,11 @@ a{
 #discount{
   display: grid;
   grid-template-columns: 2fr 1.5fr;
-  height: 55vh;
+  height: 670px;
 }
 
 #discount .imgbox{
-  height: 55vh;
+  height: 100%;
 }
 
 #discount .imgbox img{
@@ -244,7 +244,7 @@ a{
   display: flex;
   flex-direction: column;
   text-align: flex-start;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
 }
 
@@ -256,11 +256,11 @@ a{
 #gallery{
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  height: 55vh;
+  height: 700px;
 }
 
 #gallery .imgbox{
-  height: 55vh;
+  height: 100%;
 }
 
 #gallery .imgbox img{
@@ -275,7 +275,7 @@ a{
   display: flex;
   flex-direction: column;
   text-align: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Services - Section */
@@ -700,6 +700,7 @@ a{
 
 .slider-content{
   margin-left: 5rem;
+  max-width: 50%;
 }
 
 .slider-content .lights .light h2 i{

@@ -5,48 +5,6 @@
   padding: 0.75rem;
 }
 
-/* Banners - Section */
-#led-mask .section-title,
-#gallery .section-title{
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
-}
-
-#led-mask p,
-#gallery p{
-  margin-left: 3rem;
-  font-size: 1rem;
-}
-
-#led-mask h3{
-  margin-left: 3rem;
-}
-
-#led-mask .btn,
-#gallery .btn{
-  margin-left: 3rem;
-}
-
-#discount .section-title{
-  margin-right: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
-}
-
-#discount p{
-  margin-right: 3rem;
-  font-size: 1rem;
-}
-
-#discount .btn{
-  margin-right: 3rem;
-}
-
-#discount .img-content h1 .txt-3{
-  font-size: 2rem;
-}
-
 /* Services - Section */
 #services .grid-container{
   grid-template-columns: auto;
@@ -84,6 +42,10 @@
   flex-direction: column;
 }
 
+.slider-content{
+  max-width: 100%;
+}
+
 /* Page - Animation */
 #header-home .bottom-line-1{
   transform: translateX(0);
@@ -101,8 +63,39 @@
   transform: translateY(0);
 }
 
-/* Width 768 */
-@media(max-width: 768px){
+/* Width 980 */
+@media(max-width: 980px){
+  /* Index - Page */
+  #led-mask,
+  #gallery{
+    grid-template-columns: 1fr;
+    height: 30%;
+  }
+
+  #led-mask .imgbox,
+  #gallery .imgbox{
+    height: 350px;
+  }
+
+  #led-mask .img-content .btn,
+  #gallery .img-content .btn{
+    margin-bottom: 3rem;
+  }
+
+  #discount{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50%;
+  }
+
+  #discount .imgbox{
+    height: 350px;
+  }
+
+  #discount .img-content .btn{
+    margin-bottom: 3rem;
+  }
+
   /* Gallery Page */
   #gallery-grid .grid-container{
     grid-template-columns: auto auto auto;
@@ -151,94 +144,39 @@
     display: none;
   }
 
-  #about .container .icons .icon-2::before{
-    content: '';
-    left: -10px;
-  }
-
-  /* Led - Mask Section */
-  #led-mask{
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-
-  #led-mask .imgbox{
-    height: 120%;
-  }
-
-  #led-mask .img-content .section-title{
-    margin: 2rem 0 1rem 1rem;
-  }
-
-  #led-mask .img-content p{
-    margin: 0 0 2.5rem 1rem;
-  }
-
-  #led-mask .img-content h3{
-    margin:0 0 1.5rem 1rem;
-    font-size: 1.2rem;
-  }
-
-  #led-mask .img-content .btn{
-    margin: 0 0 8rem 1rem;
-    letter-spacing: 1px;
-  }
-
-  /* Discount Section */
-  #discount{
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100vh;
-  }
-  
-  #discount .imgbox{
-    height: 50vh;
-  }
-
-  #discount .img-content{
-    height: 50vh;
-  }
-
-  #discount .img-content .section-title{
-    margin: 0.5rem 0 2rem 1rem;
-  }
-
-  #discount .img-content p{
-    margin: 0 0 2.5rem 1rem;
-  }
-
-  #discount .img-content .btn{
-    margin: 0 0 2rem 1rem;
-  }
-
-  /* Gallery Section */
-  #gallery{
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-
+  /* Banner - section */
+  #led-mask .imgbox,
+  #gallery .imgbox,
+  #led-mask .img-content,
   #gallery .img-content{
-    height: 50vh;
+    width: 100vw;
   }
 
-  #gallery .imgbox{
-    height: 50vh;
+  #discount .img-content h1,
+  #gallery .img-content h1,
+  #led-mask .img-content h1,
+  #led-mask .img-content h3{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
   }
 
-  #gallery .img-content .section-title{
-    margin: 0.5rem 0 2rem 1rem;
+  #discount .img-content h1 .txt-3{
+    font-size: 2.3rem;
   }
 
-  #gallery .img-content p{
-    margin: 0 0 2.5rem 1rem;
+  #discount .img-content p,
+  #gallery .img-content p,
+  #led-mask .img-content p{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
   }
 
-  #gallery .img-content h3{
-    margin:0 0 2rem 1rem;
-  }
-
-  #gallery .img-content .btn{
-    margin: 0 0 2rem 1rem;
+  #led-mask .img-content .btn,
+  #gallery .img-content .btn,
+  #discount .img-content .btn{
+    margin: 3rem 1.5rem;
   }
 
   /* Services Section */
@@ -291,6 +229,11 @@
     margin: 0 1.3rem;
   }
 
+  /* Cenovnik Page */
+  #cenovnik{
+    height: 2350px;
+  }
+
   /* Gallery Page */
   #gallery-grid .grid-container{
     grid-template-columns: auto;
@@ -314,29 +257,15 @@
     display: none;
   }
 
-  /* Led - Mask Section */
-  #led-mask .imgbox{
-    height: 50vh;
-  }
-
-  #led-mask .img-content{
-    height: 50vh;
-  }
-
-  #led-mask .img-content .btn{
-    margin: 0 0 1rem 1rem;
-    letter-spacing: 1px;
-  }
-
-  /* Discount Section */
-  #discount .img-content .section-title{
-    margin: 0.5rem 0 1rem 1rem;
-  }
-
   /* Logos */
   #logos .logos-home img{
     width: 120px;
     height: 80px;
+  }
+
+  /* Cenovnik Page */
+  #cenovnik{
+    height: 2750px;
   }
 }
 
@@ -350,70 +279,31 @@
     display: none;
   }
 
-  /* Led - Mask Section */
-  #led-mask{
-    height: 100vh;
-  }
-
-  #led-mask .imgbox{
-    height: 100%;
-  }
-
-  #led-mask .img-content .section-title{
-    margin: 0.5rem 0 1.5rem 1rem;
-  }
-
-  #led-mask .img-content p{
-    margin: 0 0 2rem 1rem;
-  }
-
+  #discount .img-content h1,
+  #gallery .img-content h1,
+  #led-mask .img-content h1,
   #led-mask .img-content h3{
-    margin:0 0 1.5rem 1rem;
-    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
   }
 
-  #led-mask .img-content .btn{
-    margin: 0 0 6rem 1rem;
-    letter-spacing: 1px;
+  #discount .img-content p,
+  #gallery .img-content p,
+  #led-mask .img-content p{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
   }
 
-  /* Discount - Section */
-  #discount{
-    height: 100vh;
-    align-items: flex-start;
-  }
-  
-  #discount .imgbox{
-    height: 100%;
-  }
-
-  #discount .img-content .section-title{
-    margin: 0.5rem 0 1rem 1rem;
-  }
-
-  #discount .img-content p{
-    margin: 0 0 0rem 1rem;
-  }
-
+  #led-mask .img-content .btn,
+  #gallery .img-content .btn,
   #discount .img-content .btn{
-    margin: 2rem 0 3.5rem 1rem;
+    margin: 3rem 1.5rem;
   }
 
-  /* Gallery */
-  #gallery{
-    height: 100vh;
-  }
-  
-  #gallery .imgbox{
-    height: 100%;
-  }
-
-  #gallery .img-content .section-title{
-    margin: 0.5rem 0 1rem 1rem;
-  }
-
-  #gallery .img-content p{
-    margin: 0 0 1rem 1rem;
+  .slidershow{
+    width: 100%;
   }
 }
 
@@ -423,30 +313,5 @@
   #about .container .icons .icon-2::before,
   #about .container .icons .icon-3::before{
     border: none;
-  }
-
-  #led-mask{
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-  }
-
-  #gallery{
-    grid-template-columns: repeat(2, 1fr);
-    height: 50%;
-  }
-
-  #gallery .img-content{
-    height: 100%;
-  }
-
-  #discount{
-    grid-template-columns: repeat(2, 1fr);
-    height: 50vh;
-    width: 100%;
-    flex: none;
-  }
-
-  #discount .img-content{
-    width: 100%;
   }
 }
